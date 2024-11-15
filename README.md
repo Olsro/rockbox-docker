@@ -17,8 +17,9 @@ I also improved the project to provide a simple way to cast the PC database tool
 # How to use the database tool
 The database tool is very useful to create an usable Rockbox database. Doing it on your PC will be much faster than doing it on device. For 30000 .mpc (Musepack) songs, on-device building requires more than 1 hour while it will require only a few minutes on PC.
 
-If you want to build reliably the database on your PC, you have to **organize your Music by avoiding any kind of UTF characters** (like accents). Building the database on PC will be unreliable if paths to your Music are not normalized enough. I will provide later a program to help at normalization. I had less issues on Linux with not normalized paths, but it was still broken in something like 1% of cases for some reason.
-The easiest way to maintain normalized short paths is just to sync your music using iTunes on Stock OS.
+If you want to build reliably the database on your PC, you have to **organize your Music by avoiding any kind of UTF characters** (like accents). Building the database on PC will be unreliable if paths to your Music are not normalized enough. I had less issues on Linux with not normalized paths, but it was still broken in something like 1% of cases for some reason.
+
+The easiest way to maintain normalized short paths is just to sync your music using iTunes on Stock OS. If you need to normalize the path of other file formats or don't want to sync with iTunes, you can use my program to do mass normalization: https://github.com/Olsro/musicshortestpath
 
 Steps to follow:
 1) Install Docker desktop on your system
