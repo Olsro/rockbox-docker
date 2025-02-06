@@ -12,6 +12,11 @@ mv rockbox-full.zip /usr/src/rockbox/artifacts/ipodclassic4gbw-rockbox-full.zip
 make clean && make -j && make fullzip
 mv rockbox-full.zip /usr/src/rockbox/artifacts/ipodclassic5g-rockbox-full.zip
 
+# FullZip for iPod Classic 6G
+/usr/src/rockbox/rockbox/tools/configure --target=29 --type=N
+make clean && make -j && make fullzip
+mv rockbox-full.zip /usr/src/rockbox/artifacts/ipodclassic6g-rockbox-full.zip
+
 # FullZip for iPod Mini 1G
 #/usr/src/rockbox/rockbox/tools/configure --target=25 --type=N
 #make clean && make -j && make fullzip
